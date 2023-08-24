@@ -1,0 +1,24 @@
+img, video{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+h2{
+    color: red;
+}
+
+html{
+   scroll-behavior:smooth ;
+}
+
+/* Esto es para que el hacer scroll con enlaces internos
+ en la página sea más fluido y animado */
+
+ iframe{
+    max-width: 80%;
+    height: 400px;
+ }

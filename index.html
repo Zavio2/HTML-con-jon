@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Aprendiendo HTML <!--longitud máxima de aproximadamente 60 caracteres-->
+    </title>
+    <meta
+      name="description"
+      content="En esta página estoy aprendiendo html con Jon Mircha"
+    />
+    <!--No más de 165 caracteres en la description-->
+    <link rel="canonical" href="https://tudominio.com/mi-web-canonica" />
+    <link rel="icon" href="img/alien.png" />
+    <!--icono que sale en la esquina-->
+    <link rel="apple-touch-icon" href="img/alien.png" />
+    <!--icono que sale cuando agregas la pagina al escritorio-->
+    <meta name="theme-color" content="#FF6600" />
+    <!--Cambia el color de la barra de navegacion en el cell-->
+    <!--El título y el meta con la description son importantes para el SEO
+    de la página-->
+
+    <!--No ponerle el mismo título y description a las diferentes secciones de una misma
+    página(ej: contacto, servicios, sobre nosotros...), para que google pueda mostrar el home/inicio 
+    con su título y description, y las subsecciones con sus respectivos títulos y su breve description-->
+  </head>
+  <body>
+    <p id="inicio">Aprendiendo html</p>
+    <ul>
+      <li><a href="index.html#Encabezados">Encabezados</a></li>
+      <li><a href="index.html#etiquetas-text">Etiquetas para texto</a></li>
+      <li><a href="index.html#etiquetas-formato">Etiquetas de formato</a></li>
+      <li>
+        <a href="index.html#etiquetas-estructurales"
+          >Etiquetas semánticas estructurales para maquetar el sitio</a
+        >
+      </li>
+      <li>
+        <a href="index.html#bloques-lineas"
+          >Etiquetas en bloques y etiquetas en linea</a
+        >
+      </li>
+      <li><a href="index.html#img">Imágenes</a></li>
+      <li><a href="index.html#fig">Figuras</a></li>
+      <li><a href="index.html#ol">Listas ordenadas</a></li>
+      <li><a href="index.html#ul">Listas desordenadas</a></li>
+      <li><a href="index.html#List-def">Listas de definición</a></li>
+      <li><a href="index.html#tablas">Tablas</a></li>
+      <li><a href="index.html#links">Enlaces</a></li>
+      <li>
+        <a href="index.html#elementos-interactivos">Elementos interactivos</a>
+      </li>
+      <li><a href="index.html#audio-video">Audio y video</a></li>
+      <li><a href="index.html#Formularios">Formularios</a></li>
+      <li><a href="index.html#data-attributes">Data attributes</a></li>
+      <li><a href="index.html#seo">Metadatos para el SEO</a></li>
+    </ul>
+
+    <h2 id="Encabezados">Encabezados</h2>
+
+    <h1>Encabezado H1</h1>
+    <!--Un solo h1 en el documento, así el algoritmo de los buscadores puede detectar el "título más importante"-->
+    <h2>Encabezado H2</h2>
+    <h3>Encabezado H3</h3>
+    <h4>Encabezado H4</h4>
+    <h5>Encabezado H5</h5>
+    <h6>Encabezado H6</h6>
+
+    <a href="#inicio">Volver al inicio 👆 </a>
+    <hr />
+    <h2 id="etiquetas-text">Etiquetas para texto</h2>
+    <p>Etiqueta para párrafo</p>
+    <br />
+
+    <b>Negrita</b> <br />
+    <i>Cursiva</i> <br />
+    <u>Subrayado</u>
+    <!--Es preferible hacer esto con con css-->
+    <br />
+    subíndice con<sup>2</sup> <br />
+    <mark> Texto marcado</mark>
+    <strong> Para letra negrita más fuerte</strong> <br />
+    <em>Para hacer énfasis</em> <br />
+    <blockquote>Con esta etiqueta puedo hacer una cita</blockquote>
+    <cite>autor de la cita</cite> <br /><br />
+
+    <a href="#inicio">Volver al inicio 👆 </a>
+
+    <!--Las demás etiquetas están en la periodic table html-->
+
+    <hr />
+    <!--traza una ralla, es muy útil para hacer un salto semántico de
+        contenido y separar los temas de la página-->
+
+    <h2 id="etiquetas-formato">Etiquetas de formato</h2>
+    <pre>
+        Con la etiqueta pre sale todo
+            exactamente
+                 como lo ponga
+
+         <code>
+            esta etiqueta se usa
+            para poner códigos
+         </code>
+       </pre>
+    <a href="#inicio">Volver al inicio 👆 </a>
+    <hr />
+
+    <h2 id="etiquetas-estructurales">
+      Etiquetas semánticas estructurales para maquetar el sitio
+    </h2>
+    <div>Div es una estructuras contenedora sin semántica</div>
+    <header>Header: Cabecera de un sitio web</header>
+    <main>
+      Main: Se muestra el contenido principal de la página, debe haber uno solo
+      por sitio web
+    </main>
+    <footer>Footer: Pie de página de un sitio web o de una sección</footer>
+    <nav>
+      Nav: Para navegar por otros sitios o por diferentes secciones de esta
+      misma página
+    </nav>
+    <article>
+      Article: Se usa para definir una sección de contenido autónoma e
+      independiente
+    </article>
+    <aside>Aside: Representa contenido secundario o complemetario</aside>
+    <section>
+      Section: Representa una sección de contenido genérica, para agrupar y
+      organizar contenido relacionado en bloques
+    </section>
+    <address>
+      Address: Representa una dirección física o cualquier información de
+      contacto
+    </address>
+    <br /><br />
+
+    <a href="#inicio">Volver al inicio 👆 </a>
+    <hr />
+    <h2 id="bloques-lineas">Etiquetas en bloques y etiquetas en linea</h2>
+    <h3>De bloque</h3>
+    Etiqueta que genera saltos de linea <br />
+    Div(contenedor) es la etiqueta de bloque por excelencia
+
+    <h3>De línea</h3>
+    Etiquetas que no generan saltos de linea,solo ocupa el espacio que tiene su
+    contenido <br />
+    Span(contenedor) es la etiqueta de linea por excelencia <br /><br />
+
+    <a href="#inicio">Volver al inicio 👆 </a>
+    <hr />
+    <h2 id="img">Imágenes</h2>
+    <img src="img/gif.gif" alt="gif" />
+    <img src="img/Vector.svg" alt="un vector .svg" />
+    <img src="img/insta.svg" alt="Icono de insta con un vector .svg" />
+    <img src="img/faceb.svg" alt="icono de facebook con un vector .svg" />
+    <br /><br />
+
+    <a href="#inicio">Volver al inicio 👆 </a>
+
+    <hr />
+    <h2 id="fig">Figuras</h2>
+    <figure>
+      <!--Para poner un caption debajo de la imagen-->
+      <img src="img/table html.png" alt="table" />
+      <figcaption>Periodic Table HTML</figcaption>
+    </figure>
+    <br /><br />
+
+    <a href="#inicio">Volver al inicio 👆 </a>
+    <hr />
+    <h2 id="ol">Listas ordenadas</h2>
+    <h3>Listas de estaciones del año</h3>
+    <ol>
+      <li>Verano</li>
+      <li>Invierno</li>
+      <li>Primavera</li>
+      <li>Otoño</li>
+    </ol>
+    <ol start="10">
+      <li>Verano</li>
+      <li>Invierno</li>
+      <li>Otoño</li>
+      <li>Primavera</li>
+    </ol>
+    <ol reversed>
+      <li>Verano</li>
+      <li>Invierno</li>
+      <li>Primavera</li>
+      <li>Otoño</li>
+    </ol>
+    <ol type="A">
+      <li>Verano</li>
+      <li>Invierno</li>
+      <li>Primavera</li>
+      <li>Otoño</li>
+    </ol>
+    <ol type="I">
+      <li>Verano</li>
+      <li>Invierno</li>
+      <li>Primavera</li>
+      <li>Otoño</li>
+    </ol>
+    <br /><br />
+
+    <a href="#inicio">Volver al inicio 👆 </a>
+    <hr />
+    <h2 id="ul">Listas desordenada</h2>
+    <h3>Lista de cosas que hacer</h3>
+    <ul>
+      <li>Estudiar programación</li>
+      <li>Hacer ejercicios</li>
+      <li>Dormir 8 horas</li>
+      <li>Meditar</li>
+    </ul>
+
+    <ul type="circle">
+      <li>Estudiar programación</li>
+      <li>Hacer ejercicios</li>
+      <li>Dormir 8 horas</li>
+      <li>Meditar</li>
+    </ul>
+
+    <ul type="square">
+      <li>Estudiar programación</li>
+      <li>Hacer ejercicios</li>
+      <li>Dormir 8 horas</li>
+      <li>Meditar</li>
+    </ul>
+    <hr />
+    <h2 id="List-def">Listas de definición</h2>
+    <dl>
+      <dt>HTML</dt>
+      <dd>Lenguaje de marcado para dar estructura</dd>
+      <dt>CSS</dt>
+      <dd>Hoja de estilos</dd>
+      <dt>JavaScript</dt>
+      <dd>Lenguaje de la Web</dd>
+    </dl>
+    <br /><br />
+
+    <a href="#inicio">Volver al inicio 👆 </a>
+    <hr />
+    <h2 id="tablas">Tablas</h2>
+
+    <table border="1 pix">
+      <tr>
+        <td>Nombre</td>
+        <td>Apellido</td>
+        <td>Edad</td>
+      </tr>
+      <tr>
+        <td>Alberto</td>
+        <td>Fernandez</td>
+        <td>100 años</td>
+      </tr>
+      <tr>
+        <td>Alberto</td>
+        <td>Fernandez</td>
+        <td>100 años</td>
+      </tr>
+    </table>
+    <br />
+    Hay otras formas de hacer tablas más grandes (buscar o preguntar a la IA si
+    necesito hacer una)
+    <br /><br />
+    <a href="#inicio">Volver al inicio 👆 </a>
+    <hr />
+
+    <h2 id="links">Enlaces</h2>
+    <h3>Enlace para ir a otra sección del sitio</h3>
+    <a href="Otro index.html">Ir a la otra sección</a>
+
+    <h3>Enlace externo para ir a otras páginas</h3>
+
+    <a href="https://jonmircha.com" target="_blank" rel="nofollow"
+      >Sitio de Jon Mircha</a
+    >
+
+    <!--El "target" para que el sitio externo abra en otra pestaña y el "rel=nofollow"
+            se pone cuando es un link que no tiene que ver contigo directamente, para que
+          el algoritmo detecte rápido que es un enlace ajeno a tu sitio-->
+
+    <h3>Enlace con imágenes</h3>
+    <a href="https://instagram.com" target="_blank"
+      ><img src="img/insta.svg" alt="Ir a insta"
+    /></a>
+
+    <h3>Enlaces internos para el mismo documento</h3>
+
+    <a href="#inicio">Volver al inicio 👆 </a>
+
+    <h3>Enlaces especiales</h3>
+
+    <a href="mailto:vladimircf18@gmail.com"> Enlace para el correo</a> <br />
+    <a href="tel:5358876004">Enlace para teléfono</a> <br />
+    <a
+      href="https://api.whatsapp.com/send?phone5358876004&Hola"
+      target="_blank"
+    >
+      Enlace para whatsapp</a
+    >
+    <br />
+    <!--El ? es para agregar un valor (en este caso "phone") y el &
+          para agregar otro, en este caso un mensaje a enviar a ese whatsapp-->
+    <br /><br />
+    <a href="#inicio">Volver al inicio 👆 </a>
+    <hr />
+    <h2 id="elementos-interactivos">Elementos interactivos</h2>
+    <button onclick="alert('presionaste el boton')">Botón</button>
+    <!--Se pueden agregar algunos eventos JavaScript desde html usando algunos
+            atributos, en este caso "onclick". Hacerlo así es una mala práctica-->
+
+    <details>
+      <summary>Título del acordeón</summary>
+      <article>
+        <h3>Contenido del acordeón</h3>
+        <p>Aquí puedo poner lo que quiero que esté dentro del acordeón</p>
+        <figure>
+          <img src="img/table html.png" alt="" />
+          <figcaption>Img en el acordeón</figcaption>
+        </figure>
+      </article>
+    </details>
+
+    <details open>
+      <summary>Acordeón 2</summary>
+      <h3>Este acordeón inicia abierto por el atributo "open"</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        culpa repellendus aperiam nihil, mollitia repudiandae voluptatem hic id
+        consequatur ab doloribus, velit, explicabo sint ducimus corrupti?
+        Incidunt nemo iure at?
+      </p>
+    </details>
+
+    <a href="#inicio">Volver al inicio 👆 </a>
+    <hr />
+
+    <h2 id="audio-video">Audio y video</h2>
+    <video src="img/tenis.mp4" controls></video> <br /><br />
+    <audio src="img/tenis.mp4" controls></audio> <br /><br />
+
+    <!--Hay varios atributos que se pueden usar para video y audio-->
+
+    <a href="#inicio">Volver al inicio 👆 </a>
+    <hr />
+
+    <h2 id="Iframes">Iframes</h2>
+
+    <h3>
+      El Iframe es para importar cosas de otros sitios(ej: mapas, videos de
+      youtube o previsualizacion de otras páginas) y mostrarlos en tu página
+    </h3>
+    <iframe src="https://htmlreference.io" frameborder="1"></iframe> <br />
+
+    <iframe
+      src="https://www.youtube.com/embed/oBiux8i1aDY"
+      title="Video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+
+    <br />
+
+    <h3>
+      es recomendable no usar más de una etiqueta por documento HTML porque es
+      una etiqueta muy potente y la puede relantizar
+    </h3>
+
+    <a href="#inicio">Volver al inicio 👆 </a>
+    <hr />
+    <h2 id="Formularios">Formularios</h2>
+    <h3>Inputs</h3>
+    <input type="text" />
+    <br /><br />
+    <input type="text" placeholder="Escribe tu nombre" />
+    <br /><br />
+    <input type="checkbox" />
+    <br /><br />
+    <input type="radio" />
+    <br /><br />
+    <input type="date" />
+    <br /><br />
+    <input type="color" />
+    <br /><br />
+    <input type="button" value="Button" />
+    <br /><br />
+    <input type="submit" />
+    <br /><br />
+    <input type="file" />
+    <br /><br />
+    <input type="file" multiple />
+    <!--para seleccionar varios archivos-->
+    <br /><br />
+    <input type="reset" />
+    <br /><br />
+    <input type="email" />
+    <br /><br />
+    <input type="number" />
+    <br /><br />
+    <input type="tel" />
+    <br /><br />
+    <input type="password" />
+    <br /><br />
+    <input type="search" />
+    <br /><br />
+    <textarea cols="30" rows="5"></textarea>
+    <br /><br />
+
+    <select>
+      <option>CSS</option>
+      <option>HTML</option>
+      <option>JavaScript</option>
+    </select>
+
+    <br /><br />
+
+    <select multiple>
+      <!--para seleccionar varios-->
+      <option>CSS</option>
+      <option>HTML</option>
+      <option>JavaScript</option>
+    </select>
+
+    <h3>Simulando un formulario real tipo loging</h3>
+    <form action="" autocomplete="">
+      <!--Hay varios atributos que pueden ser utiles-->
+      <label for="Usuario">Usuario</label>
+      <input
+        type="text"
+        name="Usuario"
+        id="Usuario"
+        placeholder="Ponga su usuario"
+        required
+      />
+      <br /><br />
+      <label for="Email">Email</label>
+      <input
+        type="email"
+        name="Email"
+        id="Email"
+        placeholder="Ponga su email"
+        required
+      />
+      <br /><br />
+      <label for="password">password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="password"
+        required
+      />
+      <br /><br />
+      <input type="submit" name="enviar" />
+      <br /><br />
+      <input type="reset" />
+    </form>
+
+    <!--El value es el valor del formulario que recibe el servidor-->
+    <!--El required es para que no se pueda enviar el formulario sin llenar ese o esos campos-->
+    <!--El action es para definir la accion ques se va a realizar al enviar el formulario-->
+    <!--En el curso de javascript se verá bien como procesar formularios-->
+
+    <h3>Select, radios y checkbox</h3>
+
+    <form action="">
+      <p>Elige tu idioma</p>
+      <select name="idioma" required>
+        <option value="">Elige una opcion</option>
+        <option value="es">español</option>
+        <option value="en">english</option>
+        <option value="fr">francés</option>
+        <option value="it">italiano</option>
+      </select>
+      <br /><br />
+      <p>Elige tu lenguaje fav</p>
+
+      <input
+        type="radio"
+        name="language"
+        id="language-js"
+        value="js"
+        required
+      />
+      <label for="language-js">JavaScript</label>
+
+      <input type="radio" name="language" id="language-py" value="py" />
+      <label for="language-py">phyton</label>
+
+      <input type="radio" name="language" id="language-php" value="php" />
+      <label for="language-php">PHP</label>
+
+      <!--En el input tipo radio hay que poner el mismo name y solo cambiar la id-->
+
+      <h3>Tipo checkbox</h3>
+      <p>Elige tus intereses</p>
+      <!--poner los elementos dentro del label los vincula sin tener que usar el id-->
+      <label>
+        <input type="checkbox" value="deportes" />
+        Deporte
+      </label>
+      <label>
+        <input type="checkbox" value="politica" />
+        Política
+      </label>
+      <label>
+        <input type="checkbox" value="Finanzas" />
+        Finanzas
+      </label>
+
+      <p>
+        <label>
+          <input type="checkbox" name="terminos" value="terminos" required />
+          ¿Aceptas los términos y condiciones?
+        </label>
+      </p>
+
+      <!--La parte del envio de formularios es algo que se hace con javascrip, pero usando el recurso "formsubmit.co"
+            puedo hacer solo con HTML que el formulario se envie a un correo de mi preferencia cuando se usa un
+            servidor (se puede simular un servidor con live server)-->
+
+      <br /><br />
+      <input type="submit" /> <br />
+      <input type="reset" />
+    </form>
+
+    <h2 id="data-attributes">Data Attributes</h2>
+
+    <p>Investigar luego sobre esto</p>
+
+    <h2 id="seo">Metadatos para el SEO</h2>
+
+    <pre>
+            Están en el head del index:
+            -El meta description
+            -Title
+            -El link canonical
+            -Icon
+            - Hay una para previsualizar el contenido de la pagina en las redes sociales, pero 
+            a veces varia en dependencia de la red social que sea
+            - Hay metaetiquetas para moviles
+            - Hay metaetiquetas para redes sociales 
+            (profundizar luego si es necesario)
+           </pre
+    >
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br />
+  </body>
+</html>
